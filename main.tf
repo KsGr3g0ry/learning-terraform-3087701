@@ -31,7 +31,7 @@ module "blog_vpc" {
   }
 }
 
-resource "aws_instance" "blog" {
+resource "aws_instance" "web" {
   ami           = data.aws_ami.app_ami.id
   instance_type = var.instance_type
 
